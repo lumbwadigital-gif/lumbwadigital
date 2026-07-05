@@ -1,7 +1,7 @@
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import styles from './Hero.module.css'
 
-function Hero() {
+function Hero({ onShowTodoApp }) {
   return (
     <section className={styles.hero} id="home">
       <div className="container">
@@ -25,7 +25,7 @@ function Hero() {
           </div>
 
           <div className={styles.cta}>
-            <button className="btn btn-primary">Get In Touch</button>
+            <button className="btn btn-primary" onClick={onShowTodoApp}>Try Todo App</button>
             <button className="btn btn-secondary">View My Work</button>
           </div>
         </div>
